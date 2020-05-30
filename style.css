@@ -6,6 +6,127 @@
 }
 nav{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 60% 10%;
+    padding: 30px 100px;
+    position: fixed;
+    width: 100%;   
+}
+@font-face{
+    font-family: Ngaan;
+    src: url(./font/I.Ngaan.ttf);
+}
+#logo span{
+    font-family: Ngaan;
+    font-size: 40px;
+    font-weight: 500;
+    color:white;
+}
+#navbar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* 重複3個並等分 */
+    align-items: center;
+    /* 垂直置中 */
+    text-align: center;
+    /* 水平置中 */
+}
+#icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+
+}
+#icons img{
+    width: 28px;
+    height: 29px;
     
+}
+#navbar a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    transition: 0.3s;
+    /* 執行動畫要有單位跟顏色才行 */
+}
+#navbar a:hover{
+    color:black;
+    font-size: 18px;
+}
+#banner{
+    background-image: url(./image/background\ image.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+#banner div{
+    width: 10px;
+    margin: 0 auto;
+}
+#banner div h1{
+    font-family: Ngaan;
+    font-size: 50px;
+    font-weight: 100;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    background-color: gainsboro;
+
+}
+section h1{
+    width: 100%;
+    font-size: 25px;
+    color:#252525;
+    text-align: center;
+}
+#message{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    margin:0 auto ;
+    /* border:1px solid #000; */
+}
+.elements{
+    top: 20px;
+    width: 300px;
+    height: 500px;
+    grid-gap: 10px;
+    padding: 0 20px;
+    margin:0 auto;
+    background-color: white;
+}
+.watermelon{
+    background-image: url(./image/西瓜汁.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.elements h4{
+    color:#49aa45;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.elements h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.elements p{
+    color:#333333;
+    font-size: 10px;
+    text-align: center;
+    width: 150px;
+
 }
